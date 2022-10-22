@@ -80,7 +80,7 @@ at least 7 characters that are not part of the former password.
 
 ## Tasks
 
-- :white_large_square: signature.txt
-- :white_large_square: monitoring.sh
-- :white_large_square: Bonus part
+- :white_large_square: signature.txt (ongoing)
+- :white_large_square: monitoring.sh (ongoing)
+- :white_large_square: Bonus part (ongoing)
 
