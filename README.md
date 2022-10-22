@@ -1,7 +1,5 @@
 # Born2BeRoot
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
