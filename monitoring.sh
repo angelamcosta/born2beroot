@@ -13,3 +13,9 @@ echo "Connections TCP: $(ss -tn src :4242 | grep -i "estab" | wc -l) ESTABLISHED
 echo "User log: $(who | wc -l)"
 echo "Network: IP $(ip addr | grep "inet " | sed 1d | awk '{ print($2) }') ($(ip addr | grep ether | awk '{ print($2) }'))"
 echo "Sudo: $(cat /var/log/sudo/sudo42.log | wc -l | awk '{ print $1/2 }') cmd"
+if grep -q /dev/mapper /etc/fstab
+then
+	echo "LVM is in use"
+else
+	echo "LVM not in use"
+fi
