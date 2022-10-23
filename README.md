@@ -130,6 +130,6 @@ We will also alter the following lines in the /etc/login.defs file
 
 ## Tasks
 
-- :white_large_square: signature.txt (ongoing)
-- :white_large_square: monitoring.sh (ongoing)
+- :heavy_check_mark: signature.txt
+- :heavy_check_mark: monitoring.sh
 - :white_large_square: Bonus part (ongoing)
