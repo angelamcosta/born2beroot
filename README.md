@@ -1,4 +1,4 @@
-# :computer: Born2BeRoot
+# :computer: Born2BeRoot [![anlima's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl9oe5ogt00110fm6h34z9iu9/project/2861589)](https://github.com/JaeSeoKim/badge42)
 
 ## Table of Contents
 
