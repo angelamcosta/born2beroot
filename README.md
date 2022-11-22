@@ -115,7 +115,7 @@ Note: *This is the default option, but we will make it explicit.*
     apt-get install libpam-pwquality
 ```
 
-To set up a strong password policy. We will alter in the /etc/pam.d/common-password file the following line:
+To set up a strong password policy we will alter in the /etc/pam.d/common-password file the following line:
 
 ```
     password    requisite       pam_quality.so  retry=3 difok=7 minlen=10 dcredit=-1 ucredit=-1 maxrepeat=3 enforce_for_root reject_username
