@@ -57,7 +57,7 @@ After unlocking the disk, login with the user created during installation and th
     apt-get install openssh-server
 ```
 
-To configure the shh port and permissions. As per subject instructions, an SSH service will be running on port 4242 only. For security reasons, it must not be possible to connect using SSH as root. We will alter in the /etc/ssh/sshd_config file the lines `#Port 22` to `Port 4242` and `#PermitRootLogin prohibit-password` to `PermitRootLogin no` (both *without* the hashtag). Finally, can use the commands `sudo service ssh restart` and `sudo service ssh status` to check if everything is working accordingly.
+To configure the ssh port and permissions. As per subject instructions, an SSH service will be running on port 4242 only. For security reasons, it must not be possible to connect using SSH as root. We will alter in the /etc/ssh/sshd_config file the lines `#Port 22` to `Port 4242` and `#PermitRootLogin prohibit-password` to `PermitRootLogin no` (both *without* the hashtag). Finally, can use the commands `sudo service ssh restart` and `sudo service ssh status` to check if everything is working accordingly.
 
 #### UFW
 
