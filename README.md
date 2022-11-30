@@ -1,13 +1,18 @@
 # :computer: Born2BeRoot [![anlima's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl9oe5ogt00110fm6h34z9iu9/project/2861589)](https://github.com/JaeSeoKim/badge42)
 
+<div align="center">
+
+  ![badge](https://raw.githubusercontent.com/angelamcosta/angelamcosta/main/42_badges/born2beroote.png)
+</div>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Mandatory part](#mandatory-part)
     - [Choosing the OS](#choosing-the-os)
     - [Creating the partitions](#creating-the-partitions)
-    - [Groups and users](#groups-and-users)
     - [Downloading necessary packages](#downloading-and-configuring-necessary-packages)
+    - [Groups and users](#groups-and-users)
 - [Tasks](#tasks)
 
 ## Introduction
@@ -42,10 +47,6 @@ I've created the partitions using the following configs:
         - Select the encrypted partition
         - Create the logical volumes
         - Format the logical volumes accordingly
-        
-### Groups and users
-
-As is stated in the subject, in addition to the root user, a user with your login as username has to be present. This user has to belong to the user42 and sudo groups. We will use the commands `addgroup user42` to create the user42 group, `adduser <your_login> user42` to add your user to it, and `adduser <your_login> sudo` to add your user to the sudo group. You can also check if everything is correct by using the command `getent group <name_of_the_group>` to see if your user is a part of it.
 
 ### Downloading and configuring necessary packages
 
@@ -127,6 +128,10 @@ We will also alter the following lines in the /etc/login.defs file
     PASS_MAX_DAYS   30
     PASS_MIN_DAYS   2
 ```
+
+### Groups and users
+
+As is stated in the subject, in addition to the root user, a user with your login as username has to be present. This user has to belong to the user42 and sudo groups. We will use the commands `addgroup user42` to create the user42 group, `adduser <your_login> user42` to add your user to it, and `adduser <your_login> sudo` to add your user to the sudo group. You can also check if everything is correct by using the command `getent group <name_of_the_group>` to see if your user is a part of it.
 
 ## Tasks
 
