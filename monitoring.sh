@@ -6,7 +6,7 @@ echo "Kernel: $(uname -r)"
 echo "CPU(s): $(nproc)"
 echo "vCPU(s): $(cat /proc/cpuinfo | grep processor | wc -l)"
 free --mega | grep Mem | awk '{ printf("Memory Usage: %.0f/%.0fMB (%.2f%%)\n", $3, $2, $3/$2 * 100.0) }'
-df -h . | sed 1d | grep -v used | awk '{ printf("Disk Usage: %.2f/%.2fGb (%.0f%%)\n", $3, $4, $5) }'
+df -h . | sed 1d | awk '{ printf("Disk Usage: %.2f/%.2fGb (%.0f%%)\n", $3, $4, $5) }'
 grep 'cpu ' /proc/stat | awk '{ printf("CPU load: %.2f%%\n", ($2+$4)*100/($2+$4+$5)) }'
 who -b | awk '{ print("Last reboot: "$3 " " $4) }'
 echo "Connections TCP: $(ss -tn src :4242 | grep -i "estab" | wc -l) ESTABLISHED"
